@@ -23,7 +23,7 @@ Frontend: vite, postcss, tailwindcss,
 web3 technologies: IPFS/filecoin, Moralis Wallet
 Backend: Solidity, Node.js
 
-Portfolio - https://www.pensionfinance.vercel.app
+Live URL - https://pensionfinance.vercel.app/
 
 E-mail - holyaustin@yahoo.com
 
@@ -36,3 +36,4 @@ Adding more support to several tokens like
 Aave, DAI, USDC, WBTC, WETH
 
 Currently suporting MATIC / WMATIC
+
