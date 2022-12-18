@@ -1,4 +1,3 @@
 
-  export const NFTmarketplaceAddress = "0x5dF0fA55163A9dC7352c50Db7C88943cE3539eEE"
-  export const transactionsContract = "0xA44CC65c8B88cAACfAECa1D41cb1acb994aa9e12"
+  export const NFTmarketplaceAddress = "0x0Fc1164392085534Ec1Aa1FF030AF7D1349d0EE3"
   

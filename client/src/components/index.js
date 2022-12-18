@@ -6,6 +6,7 @@ export { default as Welcome } from "./Welcome";
 export { default as Invest } from "./Invest";
 export { default as Footer } from "./Footer";
 export { default as MintProfile } from "./MintProfile";
+export { default as Profile } from "./Profile";
 export { default as Services } from "./Services";
 export { default as Sender } from "./Sender";
 export { default as Transactions } from "./Transactions";

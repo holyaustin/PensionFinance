@@ -14,7 +14,7 @@ import "./interfaces/IWETHGateway.sol";
 /// @dev The contract implements WETH Gateway to convert ETH to WETH and deposit to Aave lending pool and Vice versa
 /// @dev Here is the URL for the WETH Gateway: https://docs.aave.com/developers/v/2.0/the-core-protocol/weth-gateway 
 
-contract PensionFi {
+contract PensionFi2 {
 
     //IWETHGateway interface for the Mumbai testnet
     IWETHGateway public iWethGateway = IWETHGateway(0xee9eE614Ad26963bEc1Bec0D2c92879ae1F209fA);

@@ -66,13 +66,13 @@ contract PensionFi {
         owner = msg.sender;
         currentPositionId = 0;
 
-        tiers[30] = 700; //700 basis points which is 7% APY
-        tiers[90] = 1000; //10% APY
-        tiers[365] = 1200; //12% APY
+        tiers[365] = 1200; //1200 basis points which is 7% APY
+        tiers[730] = 2500; //25% APY
+        tiers[1825] = 7500; //75% APY
 
-        lockPeriods.push(30);
-        lockPeriods.push(90);
         lockPeriods.push(365);
+        lockPeriods.push(730);
+        lockPeriods.push(1825);
     }
 
     /// @notice stakeEther function allows user to deposit ETH funds to the PensionFi contract

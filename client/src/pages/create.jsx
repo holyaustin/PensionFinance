@@ -1,10 +1,11 @@
-import { Navbar, Footer, MintProfile } from "../components";
+import { Navbar, Footer, MintProfile, Profile } from "../components";
 
 const Create = () => (
   <div className="w-full gradient-bg-transactions">
     <Navbar />
 
     <MintProfile />
+    <Profile />
     <Footer />
   </div>
 );

@@ -7,14 +7,8 @@ async function main() {
   await nftMarketplace.deployed();
   console.log("nftMarketplace deployed to:", nftMarketplace.address);
 
-  const transactionsFactory = await hre.ethers.getContractFactory("Transactions");
-  const transactionsContract = await transactionsFactory.deploy();
-  await transactionsContract.deployed();
-  console.log("Transactions address: ", transactionsContract.address);
-
   fs.writeFileSync('./config.js', `
   export const NFTmarketplaceAddress = "${nftMarketplace.address}"
-  export const transactionsContract = "${transactionsContract.address}"
   `)
 }
 

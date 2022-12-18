@@ -6,9 +6,18 @@ A Defi DApp that allows users to contribute part of their salary as pension. the
 ## Introduction
 PensionFi is a web3 Pension Management Platform for users who wish to start contributing towards their retirement in the web3 space. Organisations and individuals contributes funds for their retirement. The users chooses an investment plan, the funds invested bear interests and compound. the yields from the investment is better than the traditional Pension investment schemes.
 
+## Features
+* Three different Staking periods (365 days, 730 days and 1825 days)
+* Users can un-stake before the unlock date (but won't earn any interest in that case)
+* The contract will automatically lend staked funds to **Aave lending pool** for generating yield
+* Users will be able to see the remaining days until lock period and Interest ratio
+* Contract owner will be able to create more staking tiers
+
 ## Deployed Contract Address on Mumbai
 
-PensionFi : https://mumbai.polygonscan.com/address/0xaa1BbafEBA31E0523B3CC03830865e8323aEB66E
+PensionFi : https://mumbai.polygonscan.com/address/0x1aEC27DDec1bc81becaFF1d744910dCa9fB270e6
+
+Profile :https://mumbai.polygonscan.com/address/0x0Fc1164392085534Ec1Aa1FF030AF7D1349d0EE3
 
 ## Aave Contracts Address Deployed on Mumbai
 WETH Gateway : https://mumbai.polygonscan.com/address/0xee9eE614Ad26963bEc1Bec0D2c92879ae1F209fA
@@ -24,6 +33,8 @@ web3 technologies: IPFS/filecoin, Moralis Wallet
 Backend: Solidity, Node.js
 
 Live URL - https://pensionfinance.vercel.app/
+
+Youtube Video: https://youtu.be/JVFWkU5MBiU
 
 E-mail - holyaustin@yahoo.com
 

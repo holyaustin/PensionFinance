@@ -15,13 +15,13 @@ const StakeContainer = ({openStakingModal}) => {
                     </svg>
                   </div>
                   <div className="xl:text-lg leading-none mt-3">
-                    Staking Period: 180 Days
+                    Staking Period: 1 Year (365 Days)
                   </div>
                   <div className="xl:text-lg leading-none mt-3">
-                    Interest: 7% APY
+                    Interest: 12% APY
                   </div>
                   <div>
-                    <button onClick={() => openStakingModal(180, '7%')} className="mt-3 xl:mt-4 bg-fuchsia-200 opacity-75 py-1 px-4 xl:text-lg text-gray-900 font-semibold hover:font-bold hover:outline-2 transition-all duration-200 border-4 rounded-full w-full hover:bg-yellow-400">Stake</button>
+                    <button onClick={() => openStakingModal(365, '12%')} className="mt-3 xl:mt-4 bg-fuchsia-200 opacity-75 py-1 px-4 xl:text-lg text-gray-900 font-semibold hover:font-bold hover:outline-2 transition-all duration-200 border-4 rounded-full w-full hover:bg-yellow-400">Stake</button>
                   </div>
                 </div>
               </div>
@@ -34,13 +34,13 @@ const StakeContainer = ({openStakingModal}) => {
                     </svg>
                   </div>
                   <div className="xl:text-lg leading-none mt-3">
-                    Staking Period: 1 Year (365 Days)
+                    Staking Period: 2 Years (730 Days)
                   </div>
                   <div className="xl:text-lg leading-none mt-3">
-                    Interest: 10% APY
+                    Interest: 25% APY
                   </div>
                   <div>
-                    <button onClick={() => openStakingModal(365, '10%')} className="mt-3 xl:mt-4 bg-fuchsia-200 opacity-75 py-1 px-4 xl:text-lg text-gray-900 font-semibold hover:font-bold hover:outline-2 transition-all duration-200 border-4 rounded-full w-full hover:bg-yellow-400">Stake</button>
+                    <button onClick={() => openStakingModal(730, '25%')} className="mt-3 xl:mt-4 bg-fuchsia-200 opacity-75 py-1 px-4 xl:text-lg text-gray-900 font-semibold hover:font-bold hover:outline-2 transition-all duration-200 border-4 rounded-full w-full hover:bg-yellow-400">Stake</button>
                   </div>
                 </div>
                 </div>
@@ -53,13 +53,13 @@ const StakeContainer = ({openStakingModal}) => {
                     </svg>
                   </div>
                   <div className="xl:text-lg leading-none mt-3">
-                    Staking Period: 2 Years (730 Days)
+                    Staking Period: 5 Years (1825 Days)
                   </div>
                   <div className="xl:text-lg leading-none mt-3">
-                    Interest: 12% APY
+                    Interest: 75% APY
                   </div>
                   <div>
-                    <button onClick={() => openStakingModal(730, '12%')} className="mt-3 xl:mt-4 bg-fuchsia-200 opacity-75 py-1 px-4 xl:text-lg text-gray-900 font-semibold hover:font-bold hover:outline-2 transition-all duration-200 border-4 rounded-full w-full hover:bg-yellow-400">Stake</button>
+                    <button onClick={() => openStakingModal(1825, '75%')} className="mt-3 xl:mt-4 bg-fuchsia-200 opacity-75 py-1 px-4 xl:text-lg text-gray-900 font-semibold hover:font-bold hover:outline-2 transition-all duration-200 border-4 rounded-full w-full hover:bg-yellow-400">Stake</button>
                   </div>
                 </div>
                 </div>

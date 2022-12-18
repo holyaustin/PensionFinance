@@ -8,7 +8,7 @@ import Modal from "../components/Modal";
 import StakeTable from "../components/StakeTable";
 import StakeContainer from "../components/StakeContainer";
 
-const CONTRACT_ADDRESS = "0xaa1BbafEBA31E0523B3CC03830865e8323aEB66E";
+const CONTRACT_ADDRESS = "0x1aEC27DDec1bc81becaFF1d744910dCa9fB270e6";
 
 function Stake() {
   
@@ -36,6 +36,11 @@ function Stake() {
     const onLoad = async () => {
       const provider = await new ethers.providers.Web3Provider(window.ethereum)
       setProvider(provider)
+      
+      provider.send("eth_requestAccounts", [])
+      const signer = provider.getSigner()
+      const signerAddress = await signer.getAddress()
+      console.log("Address connected is", signerAddress)
 
       const contract = await new ethers.Contract(
         CONTRACT_ADDRESS,
@@ -118,6 +123,7 @@ function Stake() {
     const data = {value: wei}
     contract.connect(signer).stakeEther(stakingLength, data)
     console.log(String(wei))
+    // connectAndLoad() 
   }
 
   const withdraw = positionId => {
@@ -127,7 +133,7 @@ function Stake() {
   return (
     < div className="bg-black-100">
   
-      <div className="mt-5 mr-5 flex justify-end">
+      <div className="mt-5 mr-5 flex justify-center">
         <Header isConnected={isConnected} connect={connectAndLoad} />
       </div>
 
@@ -145,7 +151,9 @@ function Stake() {
             stakeEther={stakeEther}
           />
         )
+       // connectAndLoad(); 
       }
+      connectAndLoad(); 
     </div>
   );
 }
